@@ -48,7 +48,7 @@
 
 --font-size-body:16px;
 --font-size-heading:20px;
-
+--font-size-title:40px;
 /* padding and size */
 --max-width:1600px;
 --padding-sides:1rem;
@@ -61,6 +61,7 @@
   :root {
   --font-size-body:18px;
   --font-size-header:30px;
+  --font-size-title:80px;
   }
 }
 
@@ -177,6 +178,11 @@ font-size: var(--font-size-body);
   font-size: var(--font-size-heading);
 }
 
+.font-size-title {
+
+font-size: var(--font-size-title);
+
+}
 /* body utility class */
 body {
 
@@ -197,6 +203,17 @@ background-color: var(--bg-color-main);
 
 /* general styling */
 /* General layout */
+
+/* images too big */
+@media (min-width:45em){
+
+  .content{
+  max-height:80vh;
+  min-width: 100%;
+  
+  }
+  
+  }
 
 .header-primary {
 
@@ -233,7 +250,11 @@ grid-auto-flow: column;
 grid-auto-columns: 1fr;
 
 }
+.container *{
 
+max-height: max(80vh,100%);
+
+}
 
 }
 .nav-container {
@@ -303,8 +324,6 @@ grid-template-columns: repeat(5,1fr);
 
 .header-title {
 
-font-weight: var(--font-weight-bold);
-font-size: var(--font-size-header);
 text-align: center;
 grid-column: 1/6;
 align-self: center;
