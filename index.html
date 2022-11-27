@@ -6,44 +6,47 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Perspective/style.css">
   </head>
   <body>
     <header class="header-primary">
       <div class="container">
         <div class="image-container">
-          <img class="image-static-primary" src="#" alt="Swan">
+          <h1 class="header-title">Perspective</h1>
+          <img class="image-static-primary" src="images/swan-svgrepo-com.svg" alt="Swan">
           <img class="image-sliding-background" src="#" alt="Background image">
         </div>
-      </div>
+      
         <div class="nav-container">
          <nav class="nav-primary">
           <ul role="list" class="nav-primary-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Therapy</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="navbar-link" href="#">Home</a></li>
+            <li><a class="navbar-link" href="#">Therapy</a></li>
+            <li><a class="navbar-link" href="#">Services</a></li>
+            <li><a class="navbar-link" href="#">Blogs</a></li>
+            <li><a class="navbar-link" href="#">About Us</a></li>
+            <li><a class="navbar-link" href="#">Contact</a></li>
           </ul>
         </nav>
         <nav class="nav-social">
           <ul role="list" class="nav-social-list">
-            <li><a href="#"><img src="#" alt="Facebook"></a></li>
-            <li><a href="#"><img src="#" alt="Instagram"></a></li>
-            <li><a href="#"><img src="#" alt="Twitter"></a></li>
+            <li><a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="images/twitter-svgrepo-com.svg"  alt="Twitter"></a></li>
           </ul>
          </nav>
         </div>
-    <div class="banner-container">
-      <div class="banner">
-        <p class="font-weight-bold font-size-body">
-          "Quote or something"
-        </p>
-      </div>
-    </div>
+  </div>
+ 
    </header>
     <main>
+      <div class="banner-container">
+        <div class="banner">
+          <p class="font-weight-bold font-size-body">
+            "Quote or something"
+          </p>
+        </div>
+      </div>
       <section>
         <div class="container">
           <div class="section-text">
@@ -55,14 +58,14 @@
               </p>
           </div>
           <div class="section-side">
-            <img src="#" alt="Therapy">
+            <img src="images/Stock Photos/pexels-cottonbro-studio-4098366.jpg" alt="Therapy">
           </div>
         </div>
       </section>
       <section>
         <div class="container">
           <div class="section-side">
-            <img src="#" alt="Services">
+            <img src="images/Stock Photos/pexels-cottonbro-studio-4098155.jpg" alt="Services">
           </div>
           <div class="section-text">
               <h1 class="font-weight-bold font-size-heading">
@@ -74,6 +77,13 @@
           </div>
         </div>
       </section>
+      <div class="banner-container">
+        <div class="banner">
+          <p class="font-weight-bold font-size-body">
+            "Quote or something"
+          </p>
+        </div>
+      </div>
       <section>
         <div class="container">
           <div class="section-text">
@@ -86,18 +96,18 @@
               <button class="button">Visit our blogs</button>
           </div>
           <div class="section-side">
-            <img src="#" alt="Blogs">
+            <img src="images/Stock Photos/pexels-cottonbro-studio-4100653.jpg" alt="Blogs">
           </div>
         </div>
       </section>
       <section>
         <div class="container">
           <div class="section-side">
-            
+            <img src="images/Stock Photos/pexels-cottonbro-studio-4101195.jpg" alt="about us">
           </div>
           <div class="section-text">
             <h1 class="font-weight-bold font-size-heading">About Us</h1>
-            <p  class="font-weight-regular font-size-body"></p>
+            <p  class="font-weight-regular font-size-body"> Hello </p>
           </div>
         </div>
       </section>
@@ -113,34 +123,34 @@
             </p>
             <img class="image-static-primary" src="#" alt="Contact image">
           </div>
-          <div class="section-text">
+          <div class="section-form">
             <form action="#">
               <div  class="form-fields">
                 <div>
                  <input type="text" id="fname" name="fname">
-                 <label for="fname">First Name *</label>
+                 <label for="fname">First Name</label>
                  <input type="text" id="lname" name="lname">
-                 <label for="lname"> Last Name *</label>
+                 <label for="lname"> Last Name</label>
                 </div>
                 <div>
                  <input type="text" name="email" id="email">
-                 <label for="email">Email *</label>
+                 <label for="email">Email</label>
                </div>
                <div>
                 <input type="text" id="subject" name="subject">
-                <label for="subject">Subject *</label>
+                <label for="subject">Subject</label>
                </div>
                <div>            
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <label for="message">Message *</label>
+                <label for="message">Message</label>
                </div>
                <div>
                <input type="tel" id="phone" name="phone">
                <label for="number">Number</label>
                </div>
-              </div>
-              <div class="form-button">
-               <input class="button" type="submit" value="Submit">
+               <div class="form-button">
+                <input class="button" type="submit" value="Submit">
+               </div>
               </div>
             </form>
           </div>
@@ -148,11 +158,11 @@
       </section>
     </main>
     <footer class="footer-primary">
-      <nav class="footer-nav-social">
-        <ul>
-          <li><a href="#"><img src="#" alt="Facebook"></a></li>
-          <li><a href="#"><img src="#" alt="Instagram"></a></li>
-          <li><a href="#"><img src="#" alt="Twitter"></a></li>
+      <nav>
+        <ul class="footer-nav-social">
+          <li><a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a></li>
+          <li><a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram"></a></li>
+          <li><a href="#"><img src="images/twitter-svgrepo-com.svg" alt="Twitter"></a></li>
         </ul>
       </nav>
     </footer>
