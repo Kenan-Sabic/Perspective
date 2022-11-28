@@ -57,10 +57,12 @@
 /*font size for desktop */
 /*roughly equal to 800px */
 
+
+
 @media (min-width:50em) {  
   :root {
-  --font-size-body:18px;
-  --font-size-header:30px;
+  --font-size-body:26px;
+  --font-size-heading:36px;
   --font-size-title:80px;
   }
 }
@@ -201,6 +203,8 @@ background-color: var(--bg-color-main);
 }
 
 
+
+
 /* general styling */
 /* General layout */
 
@@ -214,6 +218,7 @@ background-color: var(--bg-color-main);
   }
   
   }
+
 
 .header-primary {
 
@@ -418,7 +423,7 @@ background-color: var(--old-lavender-color);
 @media (min-width: 45em ){.footer-nav-social {
 
   grid-auto-flow: column;
-  
+  gap: 0.1em;
   grid-auto-columns: 1fr;
   
   }
@@ -428,5 +433,6 @@ background-color: var(--old-lavender-color);
 .footer-nav-social > li {
 
 display: block;
+width: 3em;
 
 }

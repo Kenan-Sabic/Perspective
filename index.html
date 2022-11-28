@@ -9,6 +9,31 @@
     <link rel="stylesheet" href="Perspective/style.css">
   </head>
   <body>
+    <nav id="topNav">
+      <div class="block-relative-left">
+        <a class="flexbox" href="#"><i class="fa fa-home"></i></a>
+        <button class="flexbox" id="btnMenu" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+      <div class="block-relative-left menu" id="thisMenu">
+        <button class="flexbox btn-list">Menu 1</button>
+        <button class="flexbox btn-list">Menu 2</button>
+        <button class="flexbox btn-list">Menu 3</button>
+        <button class="flexbox btn-list">Menu 4</button>
+        <button class="flexbox btn-list">Menu 5</button>
+      </div>
+      <div class="block-relative-right">
+        <button class="flexbox" id="btnSearch" onclick="openSearch()">
+          <i class="fa fa-search"></i>
+          <i class="fa fa-times"></i>
+        </button>
+        <form class="search" id="thisSearch">
+          <input type="text" placeholder="Search"/>
+        </form>
+      </div>
+    </nav>
     <header class="header-primary">
       <div class="container">
         <div class="image-container">
@@ -54,7 +79,13 @@
                 Therapy
               </h1>
               <p class="font-weight-regular font-size-body">
-
+                Here at Perspective our main focus is on Gestalt therapy.
+                Gestalt psychology is a school of thought that looks at the human mind and behavior as a whole. 
+                When trying to make sense of the world around us, Gestalt psychology suggests that we do not 
+                simply focus on every small component.
+                Instead, our minds tend to perceive objects as elements of more complex systems.
+                Another type of therapy that we deal in are OH cards. OH cards are a type of metaphoric 
+                associative cards used for guidance and storyrelling.
               </p>
           </div>
           <div class="section-side">
@@ -167,5 +198,6 @@
       </nav>
     </footer>
     <script type="module" src="/main.js"></script>
+    <script type="text/javascript" src="scroll.js"></script>
   </body>
 </html>
