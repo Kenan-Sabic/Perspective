@@ -6,34 +6,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheet" href="Perspective/style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav id="topNav">
-      <div class="block-relative-left">
-        <a class="flexbox" href="#"><i class="fa fa-home"></i></a>
-        <button class="flexbox" id="btnMenu" onclick="openMenu()">
-          <i class="fa fa-bars"></i>
-          <i class="fa fa-times"></i>
-        </button>
-      </div>
-      <div class="block-relative-left menu" id="thisMenu">
-        <button class="flexbox btn-list">Menu 1</button>
-        <button class="flexbox btn-list">Menu 2</button>
-        <button class="flexbox btn-list">Menu 3</button>
-        <button class="flexbox btn-list">Menu 4</button>
-        <button class="flexbox btn-list">Menu 5</button>
-      </div>
-      <div class="block-relative-right">
-        <button class="flexbox" id="btnSearch" onclick="openSearch()">
-          <i class="fa fa-search"></i>
-          <i class="fa fa-times"></i>
-        </button>
-        <form class="search" id="thisSearch">
-          <input type="text" placeholder="Search"/>
-        </form>
-      </div>
-    </nav>
+   
     <header class="header-primary">
       <div class="container">
         <div class="image-container">
@@ -67,7 +43,7 @@
     <main>
       <div class="banner-container">
         <div class="banner">
-          <p class="font-weight-bold font-size-body">
+          <p class="font-weight-bold font-size-body" id="banner1">
             "Quote or something"
           </p>
         </div>
@@ -110,7 +86,7 @@
       </section>
       <div class="banner-container">
         <div class="banner">
-          <p class="font-weight-bold font-size-body">
+          <p class="font-weight-bold font-size-body" id="banner2">
             "Quote or something"
           </p>
         </div>
@@ -199,5 +175,6 @@
     </footer>
     <script type="module" src="/main.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
+    <script src="quote.js"></script>
   </body>
 </html>
