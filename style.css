@@ -208,15 +208,31 @@ background-color: var(--bg-color-main);
 /*navbar that appears when we scroll down */
 #navbar-scroll {
 width: 100%;
-background-color: var(--old-lavender-color);
-height: 50px;
+background-color: var(--antique-fuchsia);
+height: 60;
 position: fixed;
 display: block;
 z-index: 2;
-top: -50px;
-transition:top 3s;
+top: -60px;
+transition:top 0.3s;
 }
 
+#navbar-scroll a{
+
+display: block;
+color:var(--isabelline-color) ;
+background-color: var(--antique-fuchsia);
+float: left;
+text-align: center;
+padding-left: 0.5em;
+padding-right: 0.5em;
+}
+#navbar-scroll a:hover{
+
+color: var(--antique-fuchsia);
+background-color: var(--isabelline-color);
+
+}
 
 /* images too big */
 @media (min-width:45em){
@@ -228,7 +244,10 @@ transition:top 3s;
   }
   
   }
+  h1,p {
 
+    padding: 0.5em;
+  }
 
 .header-primary {
 
@@ -239,7 +258,7 @@ transition:top 3s;
 
 section {
 
-min-height: 83vh;
+min-height: 70vh;
 margin-top: 5vh;
 
 }
@@ -252,8 +271,7 @@ display: grid;
 column-gap:0;
 margin: auto;
 min-height: 80vh;
-
-
+padding-bottom: 1em;
 }
 
 
@@ -375,7 +393,9 @@ text-align: center;
   background-color: var(--menu-color-main);
   text-align: center;
   min-height: 40vh;
+  
 }
+
 
 .section-form {
 
@@ -419,18 +439,18 @@ color: var(--button-color);
 
 .footer-primary {
 
-min-height: 40vh;
+min-height: 20vh;
 margin-top: 3vh;
-padding-top: 5vh;
-background-color: var(--old-lavender-color);
+background-color: var(--antique-fuchsia);
 margin: auto;
 }
 
 .footer-nav-social {
-  max-width: 60%;
-  display: grid;
- grid-row: repeat(3,1fr);
- gap: 1em;
+  max-width: 80vw;
+  padding: 1vh;
+  display: flex;
+ flex-direction: row;
+ justify-content: center;
   margin: auto;
   text-align: center;
 }
@@ -440,15 +460,24 @@ margin: auto;
   grid-auto-flow: column;
   gap: 0.1em;
   grid-auto-columns: 1fr;
+  padding: 7vh;
   
   }
+  .footer-primary {
+
+    min-height: 20vh;
+    margin-top: 3vh;
+    background-color: var(--old-lavender-color);
+    margin: auto;
+    }
 
 }
 
-.footer-nav-social > li {
+.footer-nav-social img {
 
-display: block;
-width: 4em;
+padding-left: 5vw;
+padding-right: 5vw;
+height: 20vh;
 
 }
 .footer-nav-social a {
