@@ -135,9 +135,9 @@ select {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
+    animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition-duration: .01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -201,139 +201,22 @@ background-color: var(--bg-color-main);
 
 
 }
-/* Navigation bar that appears on scroll */
-
-.block-relative-left {
-  display: block;
-  position: relative;
-  float: left;
-}
-.block-relative-right {
-  display: block;
-  position: relative;
-  float: right;
-}
-
-.flexbox {
-  display: flex;
-  position: relative;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-  float: left;
-}
-#topNav {
-  background: #000;
-  width: 100%;
-  top: -50px;
-  left: 0;
-  display: block;
-  position: fixed;
-  transition: all 0.5s ease;
-  z-index: 100;
-}
-
-#topNav a, #topNav button {
-  background: transparent;
-  height: 50px;
-  margin: 0;
-  color: #00bcd4;
-  font: 400 16px "Consolas";
-  text-align: center;
-}
-#topNav a:hover, #topNav button:hover {
-  background: #4d4d4d;
-  color: #fff;
-}
-
-#topNav a:focus, #topNav button:focus {
-  background: #00bcd4;
-  color: #000;
-}
-
-#topNav a, #btnMenu, #btnSearch {
-  width: 50px;
-}
-
-#btnMenu, .fa-times {
-  display: none;
-}
-
-.btn-list {
-  width: 100px;
-}
-
-.search {
-  background: #eee;
-  width: 0;
-  height: 50px;
-  top: 0;
-  right: 50px;
-  display: block;
-  position: absolute;
-  opacity: 0;
-}
-
-
-
-.desc, .blank {
-  width: 100%;
-  min-height: 100%;
-  font: 900 32px "Consolas";
-}
-
-.blank {
-  background: #eee;
-}
-
-.show-search {
-  -webkit-animation: search 0.5s ease both;
-          animation: search 0.5s ease both;
-}
-@-webkit-keyframes search {
-  to {
-    width: 150px;
-    opacity: 1;
-  }
-}
-@keyframes search {
-  to {
-    width: 150px;
-    opacity: 1;
-  }
-}
-
-.visible {
-  display: inline-block;
-}
-
-.hidden {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  #btnMenu {
-    display: flex;
-  }
-
-  .menu {
-    background: #333;
-    width: 100%;
-    top: 50px;
-    display: none;
-    position: absolute;
-  }
-  .menu button {
-    width: 100%;
-  }
-
-  .show-menu {
-    display: block;
-  }
-}
 
 /* general styling */
 /* General layout */
+
+/*navbar that appears when we scroll down */
+#navbar-scroll {
+width: 100%;
+background-color: var(--old-lavender-color);
+height: 50px;
+position: fixed;
+display: block;
+z-index: 2;
+top: -50px;
+transition:top 3s;
+}
+
 
 /* images too big */
 @media (min-width:45em){
@@ -537,15 +420,16 @@ color: var(--button-color);
 .footer-primary {
 
 min-height: 40vh;
-margin-bottom: 3vh;
+margin-top: 3vh;
+padding-top: 5vh;
 background-color: var(--old-lavender-color);
-
+margin: auto;
 }
 
 .footer-nav-social {
   max-width: 60%;
   display: grid;
- grid-row: inherit;
+ grid-row: repeat(3,1fr);
  gap: 1em;
   margin: auto;
   text-align: center;
